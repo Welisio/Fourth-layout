@@ -1,0 +1,44 @@
+@import "root.css";
+header,.header-nav,.lang-search {
+    display: flex;
+}
+.header-container {
+    margin-bottom: 15px;
+}
+header {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.nav-elem {
+    margin-right: 15px;
+}
+.lang-search {
+    
+}
+.lang {
+    margin-right: 15px;
+}
+.search-menu-mobile {
+    display: none;
+}
+/* Mob Tab */
+@media only screen and (max-width: 768px) {
+    .search-menu-mobile {
+        display: flex;
+    }
+    .header-nav,.lang-search {
+        display: none !important;
+    }
+    .search-menu-mobile > svg:first-child {
+        margin-right: 15px;
+    }
+}
+/* Mob */
+@media only screen and (max-width: 480px) {
+
+}
+/* Tab */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+}
