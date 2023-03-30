@@ -1,0 +1,9 @@
+
+@media only screen and (max-width: 768px) {
+    .structure {
+        display: none;
+    }
+    .structure-top,.structure-bottom  {
+      flex-direction: column;
+    }
+  }
