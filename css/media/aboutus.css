@@ -1,0 +1,41 @@
+@media only screen and (max-width: 768px) {
+    .structure {
+        display: none;
+    }
+    .structure-mob {
+      display: block !important;
+    }
+    .structure-top,.structure-bottom  {
+      flex-direction: column;
+      align-items: flex-start !important;
+    }
+    .text{
+      margin: 0 50px 50px 50px;
+    }
+    .image-text {
+      padding: 0 50px;
+      margin: 0 !important;
+    }
+    .haqqimizda-slide > svg:first-child {
+      display: none !important;
+    }
+    .haqqimizda-slide > svg:nth-child(2) {
+      display: block !important;
+    }
+    .image-background {
+      display: flex;
+      align-items: center;
+      height: 700px;
+      width: 100%;
+      background: var(--beige2);
+    }
+}
+@media only screen and (max-width: 480px) {
+  .image-border {
+    margin-right: 0px;
+    margin-left: 50px;
+  }
+  .image-border > img ,.image-border-btm > img {
+    height: 300px;
+  }
+}

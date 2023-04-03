@@ -7,6 +7,7 @@ footer {
 }
 .footer-blocks {
   padding: 50px 50px;
+  justify-content: space-between;
 }
 .block:not(:nth-child(5)) {
   margin-right: 30px;
@@ -42,6 +43,9 @@ footer {
 .footer-blocks-mob {
   display: none;
 }
+.footer-end-mob > img {
+  display: none;
+}
 @media only screen and (max-width: 872px) {
   .footer-blocks {
     display: none;
@@ -61,9 +65,16 @@ footer {
     padding: 25px 15px 5px 15px !important;
   }
   .footer-end-mob img {
+    display: block;
     margin-bottom: 30px;
   }
   .footer-end-mob p {
     margin-bottom: 10px;
+    color: var(--beige);
+    font-size: 14px;
+  }
+  .footer-end-mob {
+    padding: 10px;
+    justify-content: space-around;
   }
 }

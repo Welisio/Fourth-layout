@@ -1,38 +1,79 @@
 @import "root.css";
-header,.header-nav,.lang-search {
-    display: flex;
+header,.header-nav,.lang-search,.nav-elem,.lang {
+  display: flex;
 }
 .header-container {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 header {
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.header-nav,.lang-search {
+  user-select: none;
 }
 .nav-elem {
-    margin-right: 15px;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
 }
-.lang-search {
-    
+.nav-elem > a {
+  color: var(--black);
+}
+.nav-elem > a:hover {
+  color: var(--red);
+}
+.nav-elem:hover {
+  color: var(--red);
+}
+.nav-elem:nth-child(4) {
+  position: relative;
+}
+.rubrika-list {
+  width: 115px;
+  top: 30px;
+}
+.lang-list {
+  height: 50px;
+  top: 45px;
+}
+.rubrika-list,.lang-list {
+  display: none;
+  position: absolute;
+  padding: 15px;
+  background: #fff;
+  border-top: 3px solid var(--red);
+}
+.rubrika-list > ul > li,.lang-list > ul > li {
+  margin-bottom: 15px;
+  color: var(--black);
+}
+.rubrika-list > ul > li:hover,.lang-list > ul > li:hover {
+  color: var(--red);
 }
 .lang {
-    margin-right: 15px;
+  margin-right: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+.lang > svg,.nav-elem:nth-child(4) > svg {
+  margin-left: 5px;
 }
 .search-menu-mobile {
-    display: none;
+  display: none;
 }
 /* Mob Tab */
 @media only screen and (max-width: 768px) {
-    .search-menu-mobile {
-        display: flex;
-    }
-    .header-nav,.lang-search {
-        display: none !important;
-    }
-    .search-menu-mobile > svg:first-child {
-        margin-right: 15px;
-    }
+  .search-menu-mobile {
+      display: flex;
+  }
+  .header-nav,.lang-search {
+      display: none !important;
+  }
+  .search-menu-mobile > svg:first-child {
+      margin-right: 15px;
+  }
 }
 /* Mob */
 @media only screen and (max-width: 480px) {

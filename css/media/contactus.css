@@ -1,0 +1,22 @@
+@media only screen and (max-width: 768px) {
+  .location-info {
+    flex-direction: column-reverse;
+  }
+  .line2,.line3 {
+    display: none;
+  }
+  .main {
+    margin: 0 !important;
+  }
+  .header-container,.info {
+    margin: 0 50px;
+  }
+  iframe {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .location-info {
+    margin: 0px !important;
+  }
+}

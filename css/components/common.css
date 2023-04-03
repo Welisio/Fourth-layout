@@ -1,13 +1,101 @@
 @import "root.css";
+.book-container,.book-border {
+  display: flex;
+}
 .main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
   margin: 0 50px;
 }
 .main-container {
+  display: flex;
   background: var(--beige);
+  padding-bottom: 50px;
 }
-.page-nav {
+.page-nav,.title-line {
   display: flex;
 }
-.page-nav > p:nth-child(2) {
-  color: var(--beige)
+.page-nav {
+  margin-bottom: 30px;
+}
+.page-nav {
+  align-items: center;
+  height: 50px;
+  background: var(--beige2);
+  padding-left: 50px;
+}
+.page-nav > ul > li:last-child {
+  color: var(--brown) !important;
+}
+.page-nav > ul > li {
+  margin-right: 5px;
+  color: var(--black);
+  cursor: pointer;
+}
+.page-nav > ul > li, .page-nav > ul > a  {
+  display: inline-block;
+  color: var(--black)
+}
+.title-line {
+  align-items: center;
+}
+.title {
+  text-align: center;
+  font-size: 64px;
+  color: var(--black);
+  margin-bottom: 30px;
+}
+.line1 {
+  height: 2px;
+  width: 100%;
+  background: var(--black);
+  margin-bottom: 14px;
+}
+.download-book {
+  width: max-content;
+  border-radius: 3px;
+  padding: 15px 55px;
+  color: var(--beige);
+  background: var(--brown);
+  cursor: pointer;
+}
+.download-book > div {
+  display: inline;
+  margin-right: 5px;
+}
+.pages {
+  justify-content: center;
+  color: var(--black);
+  margin-bottom: 30px;
+}
+.book-container {
+  margin-bottom: 15px;
+}
+.book-border {
+  justify-content: center;
+  flex-grow: 1;
+  border: 2px solid var(--brown);
+}
+@media only screen and (max-width: 768px) {
+  .main-container {
+    padding: 0px !important;
+  }
+  .title-line {
+    flex-direction: column;
+  }
+  .line1 {
+    width: 150px;
+  }
+  .book-border > img {
+    height: 500px;
+  }
+  .arrow-right,.arrow-left {
+    display: none !important;
+  }
+  .download-book {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: center;
+  }
 }

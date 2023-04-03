@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Angelicia Pro Display";
+  src: url("../../font/Anglecia-Pro-Display.otf")
+}
+*:not(h5) {
+  font-family: "Raleway";
+}
+h5 {
+  font-family: "Angelicia Pro Display";
+}

@@ -1,0 +1,78 @@
+@import "components/root.css";
+@import "components/header.css";
+@import "components/reset.css";
+@import "components/popular.css";
+@import "components/footer.css";
+@import "components/common.css";
+@import "components/font.css";
+@import "media/search.css";
+.header-container {
+  padding: 0 50px 15px 50px;
+  background: var(--beige);
+  margin: 0;
+}
+.search-container,.more-btn-container {
+  display: flex;
+}
+.search-container {
+  flex-direction: column;
+  padding: 0 50px;
+  background: var(--beige);
+}
+.page-nav {
+  padding-left: 50px;
+  margin-bottom: 0px;
+}
+.search-line {
+  height: 2px;
+  width: 330px;
+  background: var(--brown3);
+  margin-bottom: 50px;
+}
+input {
+  width: 300px;
+  outline: none;
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.input-svg {
+  margin-bottom: 5px;
+}
+.results {
+  margin-bottom: 50px;
+}
+.result:not(:last-child) {
+  margin-bottom: 50px;
+}
+.result > ul > li:first-child {
+  color: var(--brown);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.result > ul > li:last-child > a {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.more-btn-container {
+  justify-content: center;
+}
+.more-btn {
+  width: max-content;
+  align-self: center;
+  border-radius: 3px;
+  padding: 14px 55px;
+  font-size: 17px;
+  background: var(--brown);
+  cursor: pointer;
+  color: var(--beige);
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+}

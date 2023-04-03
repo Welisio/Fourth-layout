@@ -1,0 +1,102 @@
+@import "components/root.css";
+@import "components/header.css";
+@import "components/reset.css";
+@import "components/popular.css";
+@import "components/footer.css";
+@import "components/common.css";
+@import "components/font.css";
+@import "media/science.css";
+.main-container {
+  padding-bottom: 0px;
+}
+.book,li > ul {
+  display: flex;
+}
+.science-container {
+  background: var(--beige);
+  padding-top: 15px;
+}
+.book {
+  padding-left: 50px;
+}
+.book:not(:last-child) {
+  margin-bottom: 30px;
+}
+.book:nth-child(even) {
+  background: var(--beige2)
+}
+.book > img {
+  margin-right: 30px;
+}
+li > ul {
+  margin-bottom: 30px;
+}
+li > ul > li:first-child {
+  margin-right: 30px;
+  font-size: 24px;
+}
+li > ul > li:nth-child(2) {
+  font-size: 20px;
+}
+.jurnal-btns {
+  display: flex;
+}
+.read,.download {
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.read {
+  color: var(--red);
+}
+.download {
+  color: var(--brown)
+}
+.page-nav {
+  margin-bottom: 0px;
+  padding-left: 50px;
+}
+/* pages */
+.pages-container,.pages-arrows,.jurnal-pages > ul {
+  display: flex;
+}
+.pages-container {
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+  margin-top: 30px;
+}
+.jurnal-pages > ul {
+  align-items: center;
+  font-size: 20px;
+}
+.jurnal-pages > ul > li {
+  cursor: pointer;
+}
+.jurnal-pages {
+  align-items: center;
+}
+.jurnal-pages > ul > li:first-child {
+  background: var(--brown3);
+  padding: 6px 15px;
+}
+.jurnal-pages > ul > li:not(:last-child) {
+  margin-right: 50px;
+}
+.pages-arrows {
+  align-items: center;
+  margin-bottom: 30px;
+}
+.pages-arrows > svg:first-child {
+  margin-right: 50px;
+}
+.pages-arrows > svg:last-child {
+  margin-left: 50px;
+}
+.results > div:first-child,.results > div:nth-child(2) {
+  display: inline;
+}
+.results > div:first-child {
+  display: inline;
+  font-weight: 700;
+}

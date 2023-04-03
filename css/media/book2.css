@@ -1,0 +1,5 @@
+@media only screen and (max-width: 768px) {
+  .book-border > img:last-child {
+    display: none;
+  }
+}

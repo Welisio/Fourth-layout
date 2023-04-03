@@ -1,0 +1,37 @@
+@import "components/root.css";
+@import "components/header.css";
+@import "components/reset.css";
+@import "components/popular.css";
+@import "components/footer.css";
+@import "components/common.css";
+@import "components/font.css";
+@import "media/book.css";
+.arrow-left,.arrow-right,.pages {
+  display: flex;
+}
+.arrow-left,.arrow-right {
+  align-items: center;
+}
+.line1 {
+  width: 65% !important;
+}
+.header-container {
+  background: var(--beige);
+  margin: 0px;
+}
+.header {
+  padding: 0 93px;
+}
+.page-nav {
+  margin-bottom: 0px;
+  padding-left: 90px !important;
+}
+.download-book {
+  align-self: flex-end;
+}
+.main-container {
+  padding: 0 25px;
+}
+.page-nav {
+  padding-left: 50px;
+}

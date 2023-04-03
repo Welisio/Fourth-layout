@@ -1,0 +1,154 @@
+@import "components/root.css";
+@import "components/header.css";
+@import "components/reset.css";
+@import "components/popular.css";
+@import "components/footer.css";
+@import "components/common.css";
+@import "media/jurnal.css";
+@import "components/font.css";
+.filter,.month,.year,.pages-container,.pages-arrows,.jurnal-pages > ul {
+  display: flex;
+}
+.filter {
+  align-items: center;
+  margin-bottom: 30px;
+}
+.filter > *:not(:last-child){
+  margin-right: 15px;
+}
+.filter > div:first-child {
+  font-weight: 700;
+  font-size: 15px;
+}
+.month,.year {
+  justify-content: space-between;
+  align-items: center;
+  background: var(--beige2);
+  border: 1px solid var(--brown3);
+  border-radius: 3px;
+  padding: 10px;
+  color: #908D7E;
+}
+.month {
+  width: 170px;
+  position: relative;
+}
+.year {
+  position: relative;
+}
+.month,.month-list,.year-list,.year {
+  user-select: none;
+}
+.year-list {
+  height: 60px;
+}
+.month-list {
+  height: 200px;
+}
+.month-list,.year-list {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  color: var(--black);
+  top: 50px;
+  box-shadow: 0px 2px 6px rgba(20, 20, 20, 0.2);
+  border-radius: 3px; 
+}
+.month-list > ul > li,.year-list > ul > li {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.month-list > ul > li:hover,.year-list > ul > li:hover {
+  color: var(--red);
+}
+.year {
+  width: 70px;
+}
+/* JURNAL's STYLES BELOW */
+.jurnal-btns {
+  display: flex;
+}
+.jurnal-elems {
+  display: grid;
+}
+.jurnal-elems {
+  /* justify-items: center; */
+  grid-template-columns: repeat(3, 1fr);
+}
+.jurnal-elem p {
+  font-size: 26px;
+}
+.jurnal-elem > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.jurnal-elem {
+  margin: 0 15px 30px 0;
+}
+.pic-border {
+  width: max-content;
+  border: 1px solid var(--brown);
+  padding: 10px;
+}
+.pic-border > img {
+  height: 350px;
+}
+.read,.download {
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.read {
+  color: var(--red);
+}
+.download {
+  color: var(--brown)
+}
+.pages-container {
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+}
+.jurnal-pages > ul {
+  align-items: center;
+  font-size: 20px;
+}
+.jurnal-pages {
+  align-items: center;
+}
+.jurnal-pages > ul > li {
+  cursor: pointer;
+}
+.jurnal-pages > ul > li:first-child {
+  background: var(--brown3);
+  padding: 6px 15px;
+}
+.jurnal-pages > ul > li:not(:last-child) {
+  margin-right: 50px;
+}
+.pages-arrows {
+  align-items: center;
+  margin-bottom: 30px;
+}
+.pages-arrows > svg:first-child {
+  margin-right: 50px;
+}
+.pages-arrows > svg:last-child {
+  margin-left: 50px;
+}
+.results > div:first-child,.results > div:nth-child(2) {
+  display: inline;
+}
+.results > div:first-child {
+  display: inline;
+  font-weight: 700;
+}
+.main {
+  margin: 0 !important;
+}
+.jurnal-container,.header-container {
+  margin: 0 50px;
+}
+.page-nav {
+  padding-left: 50px;
+}
